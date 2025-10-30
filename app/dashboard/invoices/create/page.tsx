@@ -4,6 +4,7 @@ import { fetchCustomers } from '@/app/lib/data';
  
 export default async function Page() {
   const customers = await fetchCustomers();
+  // console.log(new Date().toISOString().split('T'))
  
   return (
     <main>
