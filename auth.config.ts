@@ -6,7 +6,7 @@ export const authConfig = {
   },
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
-      console.log("Auth : ", auth);
+      // console.log("Auth : ", auth);
       console.log("nextUrl : ", nextUrl);
       const isLoggedIn = !!auth?.user;
       console.log("isLoggedIn : ", isLoggedIn);
